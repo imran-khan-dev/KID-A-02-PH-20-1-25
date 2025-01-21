@@ -158,7 +158,7 @@ img {
 
     .curriculum {
         background-image: url(assets/bg.png);
-        background-repeat: no-repeat;
+        background-size: contain;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -260,25 +260,22 @@ img {
     .stories {
         background-image:
             linear-gradient(to top,
-                /* Gradient direction: bottom to top */
-                rgba(254, 163, 1, 0.3) 0%,
-                /* Solid color at the bottom */
-                rgba(242, 232, 255, 0) 100%
-                /* Transparent at the top */
-            ),
+                rgba(254, 163, 1, 0.3) 5%,
+                rgba(242, 232, 255, 0) 70%),
             url(assets/bg.png);
-        /* Background image */
-        /* Position the image */
-        background-repeat: no-repeat;
-        /* Prevent the image from repeating */
-        background-size: cover;
-        /* Ensure the image covers the container */
+        background-size: contain;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 3rem;
+    }
 
+    .stories-container {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .stories h2 {
@@ -292,6 +289,7 @@ img {
         display: grid;
         gap: 0.706rem;
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 1.25rem;
     }
 
     .story {
@@ -346,12 +344,17 @@ img {
         background: var(---black);
         cursor: pointer;
         transition: background 0.2s ease;
+        margin-bottom: 2.5rem;
     }
 
     .stories button:hover {
         background: red;
     }
 
+    .footer {
+        width: 100%;
+        background: var(--sky-blue);
+    }
 
 
 }
