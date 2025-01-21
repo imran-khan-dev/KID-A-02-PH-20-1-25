@@ -197,6 +197,7 @@ img {
     .card p {
         font-family: "Raleway", serif;
         font-size: 0.638rem;
+        font-weight: 500;
         line-height: 19.2px;
         color: var(---gray);
         margin-bottom: 1.375rem;
@@ -351,10 +352,95 @@ img {
         background: red;
     }
 
+    /* Footer Section */
     .footer {
         width: 100%;
         background: var(--sky-blue);
+        padding-top: 4.06rem;
+        padding-bottom: 3.75rem;
+
     }
 
+    .footer-container {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .footer-logo-content {
+        margin-bottom: 2rem;
+    }
+
+    .footer-logo-name {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 60%;
+        margin-bottom: 1.423rem;
+    }
+
+    .footer-logo-name span {
+        font-family: "Quicksand", serif;
+        font-size: 2.233rem;
+        font-weight: 700;
+        line-height: 2.093rem;
+    }
+
+    .footer-description {
+        font-family: "Quicksand", serif;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .footer-container h2:nth-of-type(1) {
+        font-size: 1.271rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 1.723rem;
+    }
+
+    .footer-container h2:nth-of-type(2) {
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 2.31rem;
+    }
+
+    .footer-menu li a {
+        text-decoration: none;
+        font-family: "Quicksand", serif;
+        font-weight: 500;
+        font-size: 1.06rem;
+        color: var(--white);
+        transition: color 0.2s ease;
+    }
+
+    .footer-menu li {
+        margin-bottom: 1.071rem;
+    }
+
+    .footer-menu li a:hover {
+        color: var(---orange);
+    }
+
+    .footer-menu li:last-child {
+        margin-bottom: 2rem;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: left;
+    }
+
+    .socials img {
+        cursor: pointer;
+    }
+
+    .socials img:not(:last-child) {
+        margin-right: 0.53rem;
+    }
 
 }
