@@ -796,8 +796,6 @@ img {
     }
 
     /* Stories section */
-
-
     .stories-container {
         width: 1160px;
     }
@@ -954,5 +952,56 @@ img {
 
     .stories button:hover {
         background: red;
+    }
+
+    /* Footer Section */
+    .footer {
+        width: 100%;
+        background: var(--sky-blue);
+        padding-top: 7.68rem;
+        padding-bottom: 10.87rem;
+    }
+
+    .footer-container {
+        width: 1160px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .footer-logo-content {
+        margin-bottom: 0;
+        width: 35%;
+    }
+
+    .footer-logo-name {
+        width: 60%;
+        margin-bottom: 1.423rem;
+    }
+
+    .footer-logo-name span {
+        font-size: 2.633rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+    .footer-description {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .footer-container h2:nth-of-type(1) {
+        font-size: 1.625rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-container h2:nth-of-type(2) {
+        font-size: 1.625rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-menu li a {
+        font-size: 1.25rem;
     }
 }
