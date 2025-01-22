@@ -50,6 +50,10 @@ img {
     display: block;
 }
 
+.marquee {
+    display: none;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -1006,12 +1010,11 @@ img {
     }
 
     .marquee {
+        display: block;
         font-family: "Quicksand", serif;
         color: var(--sky-blue);
         font-weight: 700;
         font-size: 1.5rem;
         padding: 1rem 0;
     }
-
-
 }
