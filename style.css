@@ -73,13 +73,25 @@ img {
     cursor: pointer;
 }
 
+.top-logo-text {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
 .menu-icon {
     max-width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-/* Main content container */
+.header-main-content button {
+    display: none;
+}
+
+/* Top content container */
 .top-content-container {
     width: 93%;
     display: flex;
@@ -493,6 +505,152 @@ img {
 
 @media (min-width: 768px) {
 
-    
+    .story-all {
+        display: grid;
+        gap: 0.706rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 1.25rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    /* Header Section */
+    .header {
+        height: 6.375rem;
+        border: none;
+    }
+
+    .header-main-content {
+        width: 80.55%;
+    }
+
+    .logo {
+        max-width: 62px;
+        height: 62px;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-logo-text {
+        display: block;
+        font-family: "Quicksand", serif;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.875rem;
+        color: var(---black);
+    }
+
+    .navbar a {
+        font-family: "Quicksand", serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .navbar a:hover {
+        color: red;
+    }
+
+    .navbar> :not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    .home {
+        color: var(---orange);
+    }
+
+    .about {
+        color: var(--sky-blue);
+    }
+
+    .facilities {
+        color: #05D4DF;
+    }
+
+    .admission {
+        color: #5D58EF;
+    }
+
+    .header-main-content button {
+        display: block;
+        border: none;
+        color: var(--white);
+        background: var(---orange);
+        font-family: "Quicksand", serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        padding: 0.625rem 3.781rem;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .header-main-content button:hover {
+        background: red;
+    }
+
+    /* Top content container */
+    .top-content-container {
+        width: 80.55%;
+    }
+
+    /* Hero section */
+    .hero {
+        flex-direction: row-reverse;
+        padding: 0;
+        margin-bottom: 3.75rem;
+    }
+
+    .hero img {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .hero-text {
+        align-items: start;
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 3.5rem;
+        line-height: 3.81rem;
+        text-align: left;
+        padding: 0;
+        padding-right: 8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: auto;
+        text-align: left;
+        margin-bottom: 1.5rem;
+        padding-right: 3rem;
+    }
+
+    .hero button {
+        font-size: 1.25rem;
+        padding: 0.625rem 2.93rem;
+    }
+
 
 }
